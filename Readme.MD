@@ -100,6 +100,7 @@ MariaDB Master Slave Replication Setup Linux Command >>
 
 First, you will need to install MariaDB on both servers. You can install it by running the following command:
 ```bash
+sudo apt update -y && sudo apt upgrade -y
 sudo apt-get install mariadb-server mariadb-client -y
 ```
 
