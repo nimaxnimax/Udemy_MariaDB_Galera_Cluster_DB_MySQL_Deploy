@@ -135,7 +135,7 @@ sudo systemctl restart mariadb
 
 Next, you will need to create a replication user. The slave server will use this user to log into the master server and request binary logs. First, log in to MariaDB shell with the following command:
 ```bash
-mysql -u root -p
+sudo mysql -u root -p
 ```
 
 Provide your root password when prompted, then create a user with the following command:
@@ -190,7 +190,7 @@ sudo systemctl restart mariadb
 
 Next, log in to the MariaDB shell with the following command:
 ```bash
-mysql -u root -p
+sudo mysql -u root -p
 ```
 
 Provide your root password when prompted, then stop the slave threads as shown below:
@@ -212,7 +212,7 @@ exit;
 
 Amend the above command to use your master host IP address and your password which you created in previous steps. Please use the log file name and position values that you obtained from the master server. Step 4 – Test Database Replication - At this point, you have configured master-slave replication. Now, it’s time to test replication between master to slave. On the master server, log in to the MariaDB shell with the following command:
 ```bash
-mysql -u root -p
+sudo mysql -u root -p
 ```
 
 Provide your root password when prompted, then create a database with name mydb as shown below:
@@ -228,7 +228,7 @@ CREATE TABLE products(product_id INT NOT NULL AUTO_INCREMENT,product_name VARCHA
 
 On the slave server, log in to the MariaDB shell with the following command:
 ```bash
-mysql -u root -p
+sudo mysql -u root -p
 ```
 
 Provide your root password when prompt then check the slave status:
