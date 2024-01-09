@@ -8,7 +8,7 @@ You Can Install on AWS or GCP or Digital Ocean or Any Public Cloud >> Ubuntu 20 
 
 **********
 
-Tips/Tricks/Notes/Commands URL Link: 
+Tips/Tricks/Notes/Commands URL Link: https://github.com/nimaxnimax/Udemy_MariaDB_Galera_Cluster_DB_MySQL_Deploy
 
 Instructor & Courses >> https://www.udemy.com/user/adrian-fischer-infotech/
 
