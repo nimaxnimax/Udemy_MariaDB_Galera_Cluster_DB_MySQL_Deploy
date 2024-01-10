@@ -584,6 +584,15 @@ sudo systemctl status mariadb
 sudo mysql_secure_installation
 ```
 
+Allow TCP Ports >> VPS or Cloud Server and UFW if enabled >> 3306,4567,4568,4444 >> MariaDB_Master_Master_Replication
+```bash
+sudo ufw allow 3306/tcp
+sudo ufw allow 4567/tcp
+sudo ufw allow 4568/tcp
+sudo ufw allow 4444/tcp
+sudo ufw status
+```
+
 First Node/Server:
 ```bash
 sudo vi /etc/mysql/conf.d/galera.cnf
