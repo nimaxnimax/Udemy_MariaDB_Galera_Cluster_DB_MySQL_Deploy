@@ -291,7 +291,7 @@ sudo apt -y install chrony
 
 Once installed, start and enable Chrony
 ```bash
-sudo systemctl enable --now chronyd
+sudo systemctl enable --now chrony
 sudo timedatectl set-ntp yes
 ```
 
