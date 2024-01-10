@@ -593,6 +593,11 @@ sudo ufw allow 4444/tcp
 sudo ufw status
 ```
 
+On All Nodes/Servers (1 to 3):
+```bash
+sudo systemctl stop mariadb
+```
+
 First Node/Server:
 ```bash
 sudo vi /etc/mysql/conf.d/galera.cnf
