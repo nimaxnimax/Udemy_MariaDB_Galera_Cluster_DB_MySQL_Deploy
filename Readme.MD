@@ -322,12 +322,13 @@ sudo mysql -u root -p
 exit
 ```
 
-Allow TCP Ports >> VPS or Cloud Server and UFW if enabled >> 3306,4567,4568,4444 >> MariaDB_Master_Master_Replication
+Allow TCP/UDP Ports >> VPS or Cloud Server and UFW if enabled >> TCP(3306,4567,4568,4444) & UDP(4567) >> MariaDB_Master_Master_Replication
 ```bash
 sudo ufw allow 3306/tcp
 sudo ufw allow 4567/tcp
 sudo ufw allow 4568/tcp
 sudo ufw allow 4444/tcp
+sudo ufw allow 4567/udp
 sudo ufw status
 ```
 
@@ -564,7 +565,7 @@ select count(name) from replica4.test;
 
 **********
 
-MariaDB Galera Cluster Deployment - Ubuntu HA Configuration (Ports = TCP 3306,4567,4568,4444) - Top features of MariaDB Galera Cluster are:
+MariaDB Galera Cluster Deployment - Ubuntu HA Configuration (Ports = TCP 3306,4567,4568,4444 & UDP 4567) - Top features of MariaDB Galera Cluster are:
 - It provides active-active multi-master topology
 - You can read and write to any cluster node
 - It has automatic node joining
@@ -584,12 +585,13 @@ sudo systemctl status mariadb
 sudo mysql_secure_installation
 ```
 
-Allow TCP Ports >> VPS or Cloud Server and UFW if enabled >> 3306,4567,4568,4444 >> MariaDB_Master_Master_Replication
+Allow TCP/UDP Ports >> VPS or Cloud Server and UFW if enabled >> TCP(3306,4567,4568,4444) & UDP(4567) >> MariaDB_Master_Master_Replication
 ```bash
 sudo ufw allow 3306/tcp
 sudo ufw allow 4567/tcp
 sudo ufw allow 4568/tcp
 sudo ufw allow 4444/tcp
+sudo ufw allow 4567/udp
 sudo ufw status
 ```
 
